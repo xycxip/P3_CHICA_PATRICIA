@@ -84,7 +84,8 @@ label .menu {
   label a {
 	margin-bottom: 1em;
 	display: block;
-	color: rgb(16, 32, 15);
+	color:#f8d3c5;
+	font-size: 2em;
 	text-decoration: none;
   }
 /***********/
@@ -192,25 +193,7 @@ figcaption{
 
 }
 
-/* nav {
-	margin-top: 5%;
-}
 
-nav ul{
-	list-style-type: none;
-	text-align: center;
-	background-color:#f8d3c5;
-	padding: 1%;
-}
-
-nav ul li{
-	display: inline;
-	font-size: 1.75rem;
-	font-family: 'Cormorant Upright', serif;
-	color: #667b68;
-	padding: 1%;
-	text-decoration: underline;
-} */
 
 section{
 	max-width: 767px; 
@@ -238,7 +221,6 @@ footer{
 
 
 /*@media (max-width: 1000px) and (min-width: 726px)
-
 Phones: 320 - 767
 Tablets: 768 - 1023
 Desktop: 1024+ */

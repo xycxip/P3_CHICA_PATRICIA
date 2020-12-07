@@ -1,3 +1,4 @@
+
 /*Hamburger Menu*/
 label .menu {
 	position: absolute;
@@ -89,6 +90,8 @@ label .menu {
 	text-decoration: none;
   }
 /***********/
+
+
 h1{
 	font-family: 'Cormorant Upright', serif;
 	color: #f8d3c5;
@@ -133,9 +136,6 @@ figure img{
     grid-column-gap: 100px;
     align-content: center;
 }
-section{
-    align-content: center;
-}
 
 footer{
 	background-color: #667b68;
@@ -146,6 +146,33 @@ footer{
 
 
 
+form{
+	margin: 0 auto;
+    max-width:  100%;
+    /*max-width: 767px;*/
+    float: left;
+    background-color: #f8d3c5;
+    color:rgb(44, 39, 39);
+    padding: 5%;
+   margin-top: 10px;
+   font-family: 'Spartan', sans-serif;
+   font-size: 1rem;
+}
+
+ .form-box{
+     align-content: center;
+    margin: 0 auto;
+    max-width:  100%;
+    padding: 2%;
+} 
+
+img{
+    align-content: center;
+	margin: 0 ;
+	padding: 0;
+    max-width:  100%;
+
+}
 
 /*@media (max-width: 1000px) and (min-width: 726px)
 
@@ -153,61 +180,96 @@ Phones: 320 - 767
 Tablets: 768 - 1023
 Desktop: 1024+ */
 
- @media(max-width: 768px){
+@media(max-width: 768px){
+	body{
+		align-content: center;
+
+	}
     .container{
+		align-content: center;
         margin: 0 auto;
         max-width:  100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-row-gap: 30px;
     }
+    form{
+        
+		align-content: center;
+	
+    }
 
-    img{
-        align-content: center;
-        margin: 0 auto;
-        max-width:  100%;
    
-}
 
-
-
-
-
-} 
-/*///////////////////////////*/
-@media(min-width: 768px) and (max-width: 1023px){
-	
-	h2{
-        top:10%;
-        text-align: center;
-        size: 2.5em;
-    }
-	
-	nav ul li{
-		font-size: 1.0rem;
-    }
-
-    .container{
-        margin: 0 auto;
-        max-width:  100%;
-        /*max-width: 767px;*/
+    aside img{
+        padding: 0;
+        margin: 0;
+        max-width:  300%;
+        
         display: grid;
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
-        grid-column-gap: 100px;
-        align-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-row-gap: 30px;
+		align-content: center;
+		
     }
-  
 
-   
     footer{
 		clear: both;
 	}
+}
 
-@media (min-width: 1024px){
+@media(min-width: 768px) and (max-width: 1023px){
+	nav ul li{
+		font-size: 1.0rem;
+	}
+	body{
+		align-content: center;
 
+	}
+	section{
+		max-height: 1023px;
+          overflow: hidden; 
+    }
+    form{
+			margin: 0%;
+			padding:0;
+            width: 50%;
+            float: left;
+            max-width: 50%;
+			padding:2%;
+			align-content: center;
+    
+        }
+    
+    
+   
+		aside img{
+			padding: 0;
+			margin: 0;
+			max-width:  300%;
+			
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			grid-row-gap: 30px;
+			align-content: center;
+			
+		}
 	
+    footer{
+		clear: both;
+	}
+}
+
+@media(min-width: 1024px){
 	h1{
 		font-size: 5rem;
+	}
+	h2{
+		font-size: 3rem;
+	}
+	body{
+		align-content: center;
+
 	}
 	p{
 		font-size: 1.50rem;
@@ -215,33 +277,35 @@ Desktop: 1024+ */
 	nav ul li{
 		font-size: 1.25rem;
     }
+    
 
-    .container{
-        margin: 0 auto;
-        max-width:  100%;
+
+
+    aside img{
+		top:25%;
+        padding: 0;
+        margin: 0;
+        max-width:  300%;
+        
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
         grid-row-gap: 30px;
+		align-content: center;
+		
     }
-    section figure{
+
+    form{
+		max-width: 50%;
 		margin: 0%;
 		width: 50%;
 		float: left;
-		max-width: 50%;
-		padding:3%;
+		padding:2%;
+		align-content: center;
+		
 		
 	}
-    
-    section p{
-        text-align: center;
-        margin: 0%;
-		width: 50%;
-		float: right;
-		max-width: 50%;
-        padding:3%;
-    }
-    
-    footer{
+
+	footer{
 		clear: both;
 	}
 }
