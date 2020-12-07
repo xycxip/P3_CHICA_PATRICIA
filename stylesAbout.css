@@ -96,48 +96,12 @@ h1{
 	text-shadow: 0.5px 0.5px 0.2px #fceee9; /*CSS3 Technique: shadows*/
 }
 
-figure h1{
-	position: absolute;
-	top: 10%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	
-}
-
-header figure{
-	margin: 0;
-	padding: 0;
-	transition: width 2s, height 4s;
-	
-}
-
-/*CSS3 Technique Animation on header*/
-.box{
-    animation-name: myanimation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes myanimation{
-    0% {color: #e4dbd8;}
-    25% {color:#f0ec2a;}
-    50% {color: #e4dbd8;}
-    100% {color:#f0ec2a; }
-}
-
-h2{
-	font-family: 'Cormorant Upright', serif;
-	color: #f8d3c5;
-	text-align: center;
-	font-size: 2rem;
-}
 
 p{
-	font-family: 'Cormorant Upright', serif;
-	text-align: center;
+    font-family: 'Cormorant Upright', serif;
+    text-align: center;
     font-size: 1.5rem;
     color: #dde6d5;
-
 }
 
 header{
@@ -147,7 +111,6 @@ header{
 	top:0; 
 }
 
-/*CSS3 Technique: gradients*/
 body{
     background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(102,123,104,1) 49%, rgba(0,212,255,1) 100%);
@@ -155,78 +118,23 @@ body{
 	padding: 0;
 }
 
-.container{
+figure img{
+	margin: 0 auto;
+	max-width:  100%;
+}
+
+    .container{
     margin: 0 auto;
 	max-width:  100%;
     /*max-width: 767px;*/
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     grid-column-gap: 100px;
     align-content: center;
 }
-
-
-/*CSS3 Technique: Transparency*/
-/* aside figure:hover{
-	opacity: .75;
-}
- */
- .boxone:hover{
-    
-    opacity: .75;
-}
-
-
-.boxtwo:hover{
-    opacity: .75;
-}
-
-.boxthree:hover{
-	opacity: .75;
-}  
-
-figcaption{
-    text-align: center;
-    color: white;
-    font-family: 'Spartan', sans-serif;
-
-}
-
-/* nav {
-	margin-top: 5%;
-}
-
-nav ul{
-	list-style-type: none;
-	text-align: center;
-	background-color:#f8d3c5;
-	padding: 1%;
-}
-
-nav ul li{
-	display: inline;
-	font-size: 1.75rem;
-	font-family: 'Cormorant Upright', serif;
-	color: #667b68;
-	padding: 1%;
-	text-decoration: underline;
-} */
-
 section{
-	max-width: 767px; 
-	display: inline-block;
+    align-content: center;
 }
-
-
-aside{
-	padding: 3%;
-	margin-top: 3%;
-}
-
-figure img{
-	margin: 0 auto;
-	max-width:  100%;
-} 
 
 footer{
 	background-color: #667b68;
@@ -237,13 +145,14 @@ footer{
 
 
 
+
 /*@media (max-width: 1000px) and (min-width: 726px)
 
 Phones: 320 - 767
 Tablets: 768 - 1023
 Desktop: 1024+ */
 
-@media(max-width: 768px){
+ @media(max-width: 768px){
     .container{
         margin: 0 auto;
         max-width:  100%;
@@ -251,81 +160,85 @@ Desktop: 1024+ */
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-row-gap: 30px;
     }
+
+    img{
+        align-content: center;
+        margin: 0 auto;
+        max-width:  100%;
+   
 }
 
+
+
+
+
+} 
+/*///////////////////////////*/
 @media(min-width: 768px) and (max-width: 1023px){
 	
-	
+	h2{
+        top:10%;
+        text-align: center;
+        size: 2.5em;
+    }
 	
 	nav ul li{
 		font-size: 1.0rem;
-	}
-	aside{
-		max-height: 1023px;
-          overflow: hidden; 
-	}
-	
-	
-section{
-	max-width: 100%; 
-	display: inline-block;
-}
-    
-    /* aside img{
-		margin: 0%;
-		width: 27%;
-		float: center;
-		max-width: 27%;
-		padding:2%;
-		
-	} */
-}
+    }
 
-@media(min-width: 1024px){
+    .container{
+        margin: 0 auto;
+        max-width:  100%;
+        /*max-width: 767px;*/
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-column-gap: 100px;
+        align-content: center;
+    }
+  
+
+   
+    footer{
+		clear: both;
+	}
+
+@media (min-width: 1024px){
 	h1{
 		font-size: 5rem;
-	}
-	h2{
-		font-size: 3rem;
 	}
 	p{
 		font-size: 1.50rem;
 	}
 	nav ul li{
 		font-size: 1.25rem;
-	}
-	
-	
+    }
 
-     header img{
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       width: 100%;  
-	 }
-	 
-	 section{
-		max-width: 100%; 
-		display: inline-block;
-	}
-
-	aside{
-		max-width: 1350px;
-		overflow: hidden; 
-		padding: 3%;
-		margin-left: 2%;
-	}
-
-	/* aside img{
+    .container{
+        margin: 0 auto;
+        max-width:  100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-row-gap: 30px;
+    }
+    section figure{
 		margin: 0%;
-		width: 27%;
-		float: center;
-		max-width: 27%;
+		width: 50%;
+		float: left;
+		max-width: 50%;
 		padding:3%;
 		
-	} */
-
-	footer{
+	}
+    
+    section p{
+        text-align: center;
+        margin: 0%;
+		width: 50%;
+		float: right;
+		max-width: 50%;
+        padding:3%;
+    }
+    
+    footer{
 		clear: both;
 	}
 }
