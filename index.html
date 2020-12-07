@@ -5,27 +5,40 @@
   <meta charset="utf-8">
 
   <title>Practice Two</title>
-  <meta name="description" content="Practice Two">
+  <meta name="description" content="Practice Three">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&display=swap" rel="stylesheet">
 
 </head>
-
+<header>
+	<figure>
+		<h1 class="box">Whispers from Trees</h1>
+		<img src="trees.jpg" alt="Lake sorrounded by trees ">
+   </figure>
+</header>
 <body>
-	<header>
-   	 <h1 class="box">Whispers from Trees</h1>
-   	 <nav>
+  <label>
+	<input type='checkbox'>
+	<span class='menu'> <span class='hamburger'></span> </span>
+	
    	 	<ul>
-   	 		<li>Home</li>
-   	 		<li>About</li>
-   	 		<li>Contact</li>
-   	 	</ul>
-   	 </nav>
-   	 <figure>
-    		<img src="trees.jpg" alt="Lake sorrounded by trees ">
-   	</figure>
-   	</header>
+   	 		<li><a href = '#'>Home</a></li>
+   	 		<li><a href = '#'>About</a></li>
+   	 		<li><a href = '#'>Contact</a></li>
+			</ul>
+   </label>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  
+			ga('create', 'UA-46156385-1', 'cssscript.com');
+			ga('send', 'pageview');
+		  
+		  </script>
+
     
     <section>
     	
@@ -36,13 +49,20 @@
 
     <aside>
     	<figure>
+		  <div class ="container">
+			<div class = "boxone">
 			<img src="forestone.jpg" alt="Old Trees">
-		
-    	<!-- 	<figcaption>Cheescake</figcaption> -->
-    	  <img src="foresttwo.jpg" alt="A road sorrounded by trees"> 
-    	<!-- 	<figcaption>Special events</figcaption>  --> 
+			 <figcaption>Relaxation</figcaption>
+			 </div>
+			 <div class = "boxtwo">
+    	  	  <img src="foresttwo.jpg" alt="A road sorrounded by trees"> 
+				<figcaption>Hiking</figcaption> 
+			</div>
+			<div class = "boxthree">
     		<img src="forestthree.jpg" alt="Trees and the sun behind">
-		<!-- <figcaption>Cupcakes</figcaption>   -->
+			 <figcaption>Exploration</figcaption>  
+			</div>
+		</div>
 	
     	</figure>
     </aside>
